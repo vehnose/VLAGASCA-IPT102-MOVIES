@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using BSIT3L_Movies.Models;
 using System.Collections.Generic;
@@ -15,7 +15,6 @@ public class HomeController : Controller
         _logger = logger;
         _movies = new List<MovieViewModel>
         {
-         
            new MovieViewModel { Id = 1, Name = "20th Century Girl", Rating = "86%", ReleaseYear = 2022, Genre = "Melodrama", Img = "img/M1.jpg", Desc = "On the brink of a new century, a high schooler finds love by accident. " +
             "The premise of 20th Century Girl is this: Na Bo-ra is seventeen and loyal to her best friend, Yeon-du. However, Yeon-du is leaving for the United States soon, as she needs a specific kind of surgery for her heart.", Direct = "Bang Woo-Ri", Link = "https://www.youtube.com/watch?v=KFS4_qevE7M" },
             new MovieViewModel { Id = 2, Name = "Tune In For Love", Rating = "73%", ReleaseYear = 2019, Genre = "Drama", Img = "img/M2.jpg", Desc = "In 1994 during the IMF crisis, two people meet while exchanging stories on a radio program. They fall in love, but can't quite seem to get the timing right.", Direct = "Jung Ji-woo", Link = "https://www.youtube.com/watch?v=O2x8gaL5Omw" },
